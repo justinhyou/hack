@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Yelp!!{% endblock %}
+
+{% block body%}
+<h1>Pomona Planner!</h1>
+<b> Enter your major below and the classes you need to take will be displayed :). Try "Math"</b>
+<br>
+<form action="/search">
+    <div class="ui huge icon input">
+        <i class="search icon"></i>
+        <input name="major" type="text" placeholder="Major?">
+    </div>
+</form>
+{% endblock %}
