@@ -1,0 +1,49 @@
+1. Run the forms example (Lec17.pdf) first to make sure that your
+   simple app with Flask is working before trying something more
+   complex like myblog.
+
+2. Now to run myblog, structure your myblog app this way:
+
+   myblog/myblog.py
+         /message.py
+         /static/light.css
+                /light.html
+                /light.js
+                /pic_bulboff.gif
+                /pic_bulbon.gif
+                /style.css
+         /templates/layout.html
+                   /login.html
+                   /show_entries.html
+
+3. To run myblog app
+
+   1. Go to myblog folder using a Command/Terminal window
+
+   2. Do the following on a command prompt:
+
+          command_prompt> python myblog.py  [to start your server]
+
+   3. Access it using: http://127.0.0.1:5000/
+
+   4. Login with username (admin) and password (default)
+
+   5. Start adding things to the blog database
+
+   6. When done, logout
+
+
+
+4. To access static pages from myblog app:
+
+   1. Place the static files such as CSS, images, JavaScript files under
+      myblog/static/ 
+
+   2. Then, access it with http://localhost:5000/static/light.html if
+      light.html is the file you want to access from the static area
+
+   3. You will see from myblog example that I show how light.html is
+      linked to the main templates page (see show_entries.html).
+      
+
+
